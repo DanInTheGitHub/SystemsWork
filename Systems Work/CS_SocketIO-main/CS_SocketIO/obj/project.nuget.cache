@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gCY/BT55+Q3/aj7BnEPdE1AUJkGD2lKmqrVpgPFSmd0nTQvTPjdYzu/ziQ+0VDMe9kIoBXBhPsa81/dDfE4ktA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\CS_SocketIO\\CS_SocketIO\\CS_SocketIO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
