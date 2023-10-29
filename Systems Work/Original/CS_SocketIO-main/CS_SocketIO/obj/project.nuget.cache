@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M+K+d40EDMBmMNBA8u9FX9QosZREuS+kaMxg5kuh0BBjvcGFKitrgX7BnyCmYs0Mcly/MjlUsD1zSXdTjtdpAQ==",
+  "success": true,
+  "projectFilePath": "D:\\Equipo\\Documentos\\GitHub\\SystemsWork\\Systems Work\\CS_SocketIO-main\\CS_SocketIO\\CS_SocketIO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sebas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
