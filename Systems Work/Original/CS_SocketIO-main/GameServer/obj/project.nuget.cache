@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BttJggzvuRaNKrH6vIZ+51yuW4nPYW8Rcts5D4V/39pDiA3wNNMXFl8q55QXzDjqsDHsX9wMPmQvuDUCMQzRIA==",
+  "dgSpecHash": "Eu39AXxHZkkZJQpJYpUDtC/6AH3iuDLPWMa0jgsZtZB+VX3WrBYaMjvN8bgi3V3l6MvrcZ2tr+Y6uElSQll3BA==",
   "success": true,
-  "projectFilePath": "D:\\Equipo\\Documentos\\GitHub\\SystemsWork\\Systems Work\\CS_SocketIO-main\\GameServer\\GameServer.csproj",
+  "projectFilePath": "C:\\Users\\manol\\Dev\\Curso\\Sistemas interactivos distribuidos\\2023-2\\CS_SocketIO\\GameServer\\GameServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sebas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\manol\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

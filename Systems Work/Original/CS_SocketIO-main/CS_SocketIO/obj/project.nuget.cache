@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "M+K+d40EDMBmMNBA8u9FX9QosZREuS+kaMxg5kuh0BBjvcGFKitrgX7BnyCmYs0Mcly/MjlUsD1zSXdTjtdpAQ==",
+  "dgSpecHash": "mJQjr5LmkDOEcqEfC5D26aZ66pzCgB3ezL3HF447PtX/4X8+CfJ8N8y/3aHTiqzwAKr5rrWyyzIXLRDoCQzIJQ==",
   "success": true,
-  "projectFilePath": "D:\\Equipo\\Documentos\\GitHub\\SystemsWork\\Systems Work\\CS_SocketIO-main\\CS_SocketIO\\CS_SocketIO.csproj",
+  "projectFilePath": "C:\\Users\\manol\\Dev\\Curso\\Sistemas interactivos distribuidos\\2023-2\\CS_SocketIO\\CS_SocketIO\\CS_SocketIO.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sebas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\manol\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

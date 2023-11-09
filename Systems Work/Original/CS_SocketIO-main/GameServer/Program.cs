@@ -8,7 +8,9 @@ Game game = new Game();
 
 
 io.On("connection",onConnection);
-StartSendingState();
+
+
+UpdateState();
 
 void onConnection(object _client)
 {
@@ -22,6 +24,7 @@ void onConnection(object _client)
     }
 
     Console.WriteLine("Cliente conectado " + username);
+    
     game.SpawnPlayer(client.Id,username);
 
     client.Emit("welcome", new {
@@ -29,11 +32,12 @@ void onConnection(object _client)
             Id = client.Id,
             State =game.State,
         });
+    client.Broadcast("newPlayer",new { Id=client.Id , Username=username });
     client.On("move", (axis) => {
         int  horizontal = ((dynamic)axis).Horizontal;
         int vertical = ((dynamic)axis).Vertical;
 
-        game.SetAxis(client.Id,new Axis {Horizontal=horizontal,Vertical = vertical });
+        game.SetAxis(client.Id,new Axis {Horizontal=horizontal,Vertical = vertical  });
     });
 
 
@@ -47,12 +51,13 @@ void onConnection(object _client)
 }
 io.Listen();
 
- void StartSendingState()
-{
-    var timer = new Timer((e) => UpdateState(), null, 0, SERVER_TIME_STEP);
-}
 
- void UpdateState()
+
+ async Task UpdateState()
 {
-    io.Emit("updateState", new {State=game.State});
+    while (true)
+    {
+        io.Emit("updateState", new { State = game.State });
+        await Task.Delay(TimeSpan.FromMilliseconds(SERVER_TIME_STEP));
+    }
 }
