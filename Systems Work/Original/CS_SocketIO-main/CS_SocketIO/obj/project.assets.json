@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\manol\\.nuget\\packages\\": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manol\\Dev\\Curso\\Sistemas interactivos distribuidos\\2023-2\\CS_SocketIO\\CS_SocketIO\\CS_SocketIO.csproj",
+      "projectUniqueName": "D:\\Equipo\\Documentos\\GitHub\\SystemsWork\\Systems Work\\Original\\CS_SocketIO-main\\CS_SocketIO\\CS_SocketIO.csproj",
       "projectName": "CS_SocketIO",
-      "projectPath": "C:\\Users\\manol\\Dev\\Curso\\Sistemas interactivos distribuidos\\2023-2\\CS_SocketIO\\CS_SocketIO\\CS_SocketIO.csproj",
-      "packagesPath": "C:\\Users\\manol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manol\\Dev\\Curso\\Sistemas interactivos distribuidos\\2023-2\\CS_SocketIO\\CS_SocketIO\\obj\\",
+      "projectPath": "D:\\Equipo\\Documentos\\GitHub\\SystemsWork\\Systems Work\\Original\\CS_SocketIO-main\\CS_SocketIO\\CS_SocketIO.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "D:\\Equipo\\Documentos\\GitHub\\SystemsWork\\Systems Work\\Original\\CS_SocketIO-main\\CS_SocketIO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\manol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -114,7 +114,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

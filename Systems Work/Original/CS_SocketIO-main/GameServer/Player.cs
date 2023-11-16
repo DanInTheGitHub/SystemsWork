@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,5 +19,20 @@ namespace GameServer
         public int Speed { get; set; }
         public int Score { get; set; }
         public bool CanJump { get; internal set; }
+        public bool isDead { get; set; }
+
+        public bool Take(Player player)
+        {
+            if (!isDead)
+            {
+                var dx = player.x - x;
+                var dy = player.y - y;
+                var rSum = Radius + player.Radius;
+
+                return dx * dx + dy * dy <= rSum * rSum;
+            }
+            else
+            { return false; }
+        }
     }
 }

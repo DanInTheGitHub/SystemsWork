@@ -72,6 +72,19 @@ namespace GameServer
 
             foreach (var player in State.Players)
             {
+                if(player.isDead)continue;
+                foreach (var player01 in State.Players)
+                {
+                    if (player01.Id == player.Id) continue;
+                    if (player.Take(player01))
+                    {
+                        if (player01.Radius>player.Radius)
+                        {
+                            player01.Radius += 1;
+                            PlayerisDead(player);
+                        }                        
+                    }
+                }
                 var axis = Axes[player.Id];
 
                 if (axis.Horizontal > 0 && player.x < WorldWidth - player.Radius)
@@ -120,8 +133,8 @@ namespace GameServer
                     }
                     else
                     {
-                        player.Score += coin.Points;
-                        Console.WriteLine(player.Username+":"+player.Score);
+                        player.Radius += coin.Points;
+                        Console.WriteLine(player.Username+":"+player.Radius);
                         return false;
                     }
                 }).ToList();
@@ -144,6 +157,21 @@ namespace GameServer
         {
             State.Players = State.Players.Where(player => player.Id != id).ToList();
             Axes.Remove(id);
+        }
+
+        public void PlayerisDead(Player player)
+        {
+            player.isDead = true;
+            Player_Back(player);
+        }
+        async Task Player_Back(Player player)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            Random random=new Random();
+            player.x = random.Next(10, WorldWidth - 10);
+            player.y = random.Next(1, WorldHeigh - 10);
+            player.Radius = 10;
+            player.isDead= false;
         }
 
         async Task StartGameLoop()
@@ -169,7 +197,8 @@ namespace GameServer
             Random random = new Random();
 
             if (State.Coins.Count <= MaxCoins) {
-                Coin coin = new Coin {
+                Coin coin = new Coin
+                {
                     Id = Guid.NewGuid().ToString(),
                     x = random.Next(10, WorldWidth - 10),
                     y = random.Next(10, WorldHeigh - 10),
